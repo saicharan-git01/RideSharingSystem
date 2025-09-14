@@ -1,32 +1,50 @@
-# RideSharingSystem
-This Java program simulates a simple ride-sharing fare calculation system for two types of vehicles: Bike and Car. It allows users to input the type of ride and the travel distance, and then calculates the fare based on predefined per-kilometer rates
--Bike: ₹10 per kilometer
--Car: ₹20 per kilometer
+# Ride-sharing-System
+A simple java  **Ride Sharing System**  with 
+- Custom Exception ('InvalidRideTypeException')
+- Abstract Classes ('Ride')
+- Inheritance and polimorphism ('BikeRide', 'CarRide')
+- User Input Handling with 'Scanner'
 
-The system also handles invalid ride types and distances through custom and standard exception handling.
+The system allows a user to book either a **Bike** or a **Car** ride, enter the distace, and get the calculated fare.
 
-# 🧾Features
+---
+# Features :
+- Enter ride type ('bike' or 'car')
+- Enter distance traveled
+- Calculate fare:
+  - **Bike** = ₹10 * distance
+  - **car**  = ₹20 * distance 
+- Error handling:
+ - Invalid ride Type
+ - Invalid distance (<= 0)
 
--Object-Oriented Design using abstract classes and inheritance.
--Polymorphic behavior for different ride types (BikeRide and CarRide).
--Custom exception handling for invalid ride types (InvalidRideTypeException).
--Input validation for distance values.
--Dynamic fare calculation based on ride type and distance.
+---
 
-# 📂File Structure
-|--RideSharingSystem.java
-|--README.md
+# Example Run:
 
-# How to Use
---bash
-git clone https://github.com/<saicharan-git01>/RideSharingSystem
-javac RideSharingSystem.java
-java RideSharingSystem
+##Input 
+bike
+12
 
-NOTE:
-The driver names and vehicle numbers are hardcoded for simplicity.
-You can easily extend the system to support more ride types or dynamic pricing.
+##Output
+Driver: Raju
+Vehicle No: AP39AB1234
+Distance: 12.0 km
+Fare: ₹120.0
 
-# Author 
-Developed by Sai Charan
-Email : bondlavarusaicharan@gmail.com
+## How to Run :
+ # in Terminal
+  1. clone the repo
+   ..bash
+   gitclone https://github.com/<abhilashbusa-gitacc01>/Ride-Sharing-System.git
+   cd Ride-Sharing-System
+
+   javac Ridde-sharing-Syatem.java
+   java Ride-Sharing-System
+
+ # Manually
+  - open your vscode/byteXL-nimbus or other platforms
+  - copy & paste this code
+  - click on 'Run'
+  - it will compile and run the code if oracle java development kit is installed on your pc
+  - now in 'terminal' give input and press 'ctrl+enter'
